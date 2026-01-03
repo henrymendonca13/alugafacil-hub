@@ -1,11 +1,8 @@
-body {
-    font-family: Arial, sans-serif;
-    max-width: 900px;
-    margin: auto;
-}
+flask
+flask-login
+flask-sqlalchemy
+stripe
+gunicorn
+python-dotenv
 
-input, select, button {
-    width: 100%;
-    margin: 6px 0;
-    padding: 8px;
-}
+
