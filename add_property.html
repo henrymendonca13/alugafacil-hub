@@ -1,0 +1,28 @@
+<form method="post">
+    <input name="titulo" placeholder="Título do imóvel" required>
+
+    <select name="cidade">
+        {% for cidade in cidades %}
+        <option value="{{ cidade }}">{{ cidade }}</option>
+        {% endfor %}
+    </select>
+
+    <input name="tipo" placeholder="Tipo (casa, apto)">
+    <input name="quartos" type="number" placeholder="Quartos">
+    <input name="suites" type="number" placeholder="Suítes">
+    <input name="garagem" type="number" placeholder="Garagem">
+    <input name="metragem" type="number" placeholder="m²">
+    <input name="condominio" placeholder="Condomínio">
+    <input name="iptu" placeholder="IPTU">
+
+    <h4>Eventos</h4>
+    {% for evento in eventos %}
+        <label>
+            <input type="checkbox" name="eventos" value="{{ evento }}">
+            {{ evento }}
+        </label>
+    {% endfor %}
+
+    <button type="submit">Salvar Imóvel</button>
+</form>
+

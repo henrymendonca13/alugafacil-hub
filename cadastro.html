@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro | AlugaFácil</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<h2>Cadastro de Parceiro</h2>
+
+<form method="post" action="/cadastro">
+    <input name="nome_responsavel" placeholder="Nome do responsável" required>
+    <input name="nome_imobiliaria" placeholder="Nome da imobiliária ou corretor" required>
+    <input name="creci" placeholder="CRECI" required>
+    <input name="cpf_cnpj" placeholder="CPF ou CNPJ" required>
+
+    <select name="cidade" required>
+        <option value="">Cidade</option>
+        <option>Magé</option>
+        <option>Guapimirim</option>
+        <option>Teresópolis</option>
+        <option>Petrópolis</option>
+        <option>Nova Friburgo</option>
+    </select>
+
+    <input name="whatsapp" placeholder="WhatsApp" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="password" name="senha" placeholder="Senha" required>
+
+    <select name="plano" required>
+        <option value="">Plano</option>
+        <option value="parceiro">Parceiro</option>
+        <option value="elite">Elite</option>
+        <option value="premium">Premium</option>
+    </select>
+
+    <button type="submit">Criar conta e continuar</button>
+</form>
+
+</body>
+</html>

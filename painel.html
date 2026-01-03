@@ -1,0 +1,13 @@
+<h2>Painel do Parceiro</h2>
+
+<a href="/imovel/novo">Cadastrar imóvel</a>
+<a href="/logout">Sair</a>
+
+<h3>Meus Imóveis</h3>
+
+{% for imovel in imoveis %}
+<div>
+    {{ imovel.tipo }} - {{ imovel.status }}
+    <a href="/imovel/excluir/{{ imovel.id }}">Excluir</a>
+</div>
+{% endfor %}
